@@ -1,1 +1,61 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  background-color: green;
+}
+
+/* .container {
+  padding: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+} */
+
+.card {
+  background-color: white;
+  border-color: black;
+  margin: 0px auto;
+  width: 250px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 60px;
+}
+
+.card:before {
+  align-self: flex-start;
+  margin-left: 15px;
+}
+
+.card:after {
+  align-self: end;
+  transform: rotate(180deg);
+  margin-right: 15px;
+}
+
+.number {
+  text-align: center;
+  align-self: center;
+}
+
+.card.heart:before,
+.card.heart:after {
+  content: "♥";
+  color: red;
+}
+
+.card.spade:before,
+.card.spade:after {
+  content: "♠";
+}
+
+.card.diamond:before,
+.card.diamond:after {
+  content: "♦";
+  color: red;
+}
+
+.card.club:before,
+.card.club:after {
+  content: "♣";
+}
